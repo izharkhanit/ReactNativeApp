@@ -1,6 +1,6 @@
-# EMAAR property app with React Native
+# property app with React Native
 
-EMAAR property application focussing on fundamentals of React Native. The app consists of a landing page with search textInput along with property list  & selected property display page. 
+ property application focussing on fundamentals of React Native. The app consists of a landing page with search textInput along with property list  & selected property display page. 
 
 ## Prerequisites
 

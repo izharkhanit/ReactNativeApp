@@ -49,7 +49,7 @@ const RootNavigator = createStackNavigator(
         SelectedProperty: {
             screen: SelectedProperty,
             navigationOptions: () => ({
-                title: 'EMAAR',
+                title: 'PROPERTY',
                 headerStyle: {
                     marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight,
 

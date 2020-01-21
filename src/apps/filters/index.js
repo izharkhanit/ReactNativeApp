@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 
-const emaarLogo = 'https://www.emaar.com/-/media/projects/emaar-properties/emaar-corp/site-logo/emaar-logo.svg';
+const Logo = '';
 export default class Filter extends Component {
 
     constructor(props) {
@@ -27,8 +27,8 @@ export default class Filter extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image source={{ uri: emaarLogo }} style={styles.logo} />
-                <Text style={[styles.infoText, styles.medium]}>SEARCH PROPERTIES ON <Text style={styles.regular}>EMAAR</Text></Text>
+                <Image source={{ uri: Logo }} style={styles.logo} />
+                <Text style={[styles.infoText, styles.medium]}>SEARCH PROPERTIES ON <Text style={styles.regular}>PROPERTIES</Text></Text>
                 <View style={styles.inputContainer}>
                     <TextInput
                         underlineColorAndroid={'transparent'}

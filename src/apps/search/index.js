@@ -35,8 +35,8 @@ export default class Search extends Component {
         });
         const { navigation } = this.props;
         const query = navigation.getParam('query', '');
-        let url = `http://developer.EMAAR.com/search/data/${query}`;
-        // http://developer.emaar.com/search/data/
+        let url = `http://developer.hello.com/search/data/${query}`;
+
 
         // Networking using fetch  & async-await
         // Read more: https://facebook.github.io/react-native/docs/network.html

@@ -120,7 +120,7 @@ export default class LandingPage extends Component {
                         <View>
                             <Image source={require('../../../assets/img-1.jpg')} style={styles.view} />
                             <Text style={styles.textImage}>
-                                EMAAR Beach Front
+                                Beach Front
                        </Text>
                         </View>
                         <View>
@@ -144,7 +144,7 @@ export default class LandingPage extends Component {
                         <View>
                             <Image source={require('../../../assets/img-5.jpg')} style={styles.view} />
                             <Text style={styles.textImage}>
-                                EMAAR South
+                                South
                        </Text>
                         </View>
                         {/**END**  When getting the json data, loop and reuse the separate component */}
