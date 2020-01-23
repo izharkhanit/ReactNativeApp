@@ -8,6 +8,7 @@ import {
     TouchableWithoutFeedback,
 } from 'react-native';
 
+
 const screenWidth = Dimensions.get('window').width;
 const itemSpacing = 10;
 const rowWidth = (screenWidth - 3 * itemSpacing) / 2;
@@ -34,17 +35,7 @@ const Property = props => {
             <TouchableWithoutFeedback
                 onPress={handlePropertyPress}
             >
-                {/* <View style={styles.propertContainer}>
-                    <Text style={styles.propertyType}>
-                        Studio
-                       </Text>
-                    <Image source={require('../../../assets/img-1.jpg')} style={styles.propertImage} />
-                    <FontAwesome5 name="star" style={styles.filterIcon} size={30} color="white" />
 
-                    <Text style={styles.propertyPrice}>
-                        <Text style={{ fontSize: 10 }}>From </Text>AED <Text style={{ color: '#71a6d4' }}>4,750,000</Text>
-                    </Text>
-                </View> */}
             </TouchableWithoutFeedback>
         </View>
     );

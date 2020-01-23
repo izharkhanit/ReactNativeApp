@@ -1,11 +1,31 @@
+'use strict';
+
 import React from 'react';
 import { StatusBar, Platform, View } from 'react-native';
-import { createStackNavigator } from 'react-navigation';
-import LandingPage from './src/apps/landingpage';
-import Search from './src/apps/search';
-import ProductDisplay from './src/apps/property-display-page';
-import SelectedProperty from './src/apps/property-display-page/selected-property'
-import Filter from './src/apps/filters';
+import RootApp from '././src/root-app/RootApp'
+
+/** So Just for SOLID principles
+* This is the main App.js from where before login everything happens here
+* Below are my Algo to execute tasks before going to RootApp and doing more code Abstraction
+* Algo
+* const prod = process.env.NODE_ENV === 'production'
+
+* if (prod && env.SENTRY_DSN) {
+*     installSentry()
+*      what else required
+* }
+
+* Any further thing you want to do, like creating objectURL or heapID
+
+* Register service worker only in prod, remove existing SW's in dev *
+ 
+* if (prod) {
+*   require('offline-plugin/runtime').install()
+* } else {
+*     unregisterAll()
+*   }
+* const store = call the configuration store
+*/
 
 export default class App extends React.Component {
 
@@ -13,60 +33,8 @@ export default class App extends React.Component {
         console.disableYellowBox = true;
         return (
             <View style={{ flex: 1, marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight }}>
-                <RootNavigator />
+                <RootApp />
             </View>
         );
     }
 }
-
-const RootNavigator = createStackNavigator(
-    {
-        Home: {
-            screen: LandingPage,
-            navigationOptions: () => ({
-                header: null,
-            }),
-        },
-        Search: {
-            screen: Search,
-            navigationOptions: () => ({
-                title: 'Search',
-                headerStyle: {
-                    marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight,
-                },
-            }),
-        },
-        ProductDisplay: {
-            screen: ProductDisplay,
-            navigationOptions: () => ({
-                title: 'ProductDisplay',
-                headerStyle: {
-                    marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight,
-
-                },
-            }),
-        },
-        SelectedProperty: {
-            screen: SelectedProperty,
-            navigationOptions: () => ({
-                title: 'PROPERTY',
-                headerStyle: {
-                    marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight,
-
-                },
-            }),
-        },
-        Filter: {
-            screen: Filter,
-            navigationOptions: () => ({
-                title: 'Filter',
-                headerStyle: {
-                    marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight,
-                },
-            }),
-        },
-    },
-    {
-        initialRouteName: 'Home',
-    }
-);

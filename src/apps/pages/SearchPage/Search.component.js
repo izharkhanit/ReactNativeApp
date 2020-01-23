@@ -1,11 +1,15 @@
+'use strict';
+
 import React, { Component } from 'react';
+
 import {
-    StyleSheet,
     Text,
     View,
 } from 'react-native';
-import Property from '../../components/Property';
-import { FlatList } from '../../../node_modules/react-native-gesture-handler';
+
+import styles from './Search.component.style';
+import Property from '../../components/SearchComponents/Property';
+import { FlatList } from 'react-native-gesture-handler';
 
 export default class Search extends Component {
 
@@ -78,19 +82,3 @@ export default class Search extends Component {
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    listContainer: {
-        paddingTop: 10,
-        backgroundColor: '#fff',
-    },
-    text: {
-        color: '#94989f',
-    },
-});
