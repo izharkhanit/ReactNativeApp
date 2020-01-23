@@ -11,6 +11,7 @@ import styles from './Search.component.style';
 import Property from '../../components/SearchComponents/Property';
 import { FlatList } from 'react-native-gesture-handler';
 
+// This component is just for an example
 export default class Search extends Component {
 
     constructor(props) {
@@ -42,8 +43,7 @@ export default class Search extends Component {
         let url = `http://developer.hello.com/search/data/${query}`;
 
 
-        // Networking using fetch  & async-await
-        // Read more: https://facebook.github.io/react-native/docs/network.html
+
         let response = await fetch(url, {
             method: 'GET',
         });

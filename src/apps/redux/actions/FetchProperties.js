@@ -1,3 +1,5 @@
+'use strict';
+
 import { FETCH_PROPERTIES_SUCCESS, FETCH_PROPERTIES_FAILURE, FETCHING_PROPERTIES } from '../../../root-app/Constants';
 
 export function fetchProperties() {

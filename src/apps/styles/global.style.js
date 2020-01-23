@@ -1,4 +1,4 @@
-/* Styles is the folder where your global styles, themes, and mixins will go */
+/* Styles is the folder where your global styles, themes,svg,custom icons, and mixins will go */
 
 'use strict';
 import React from 'react';
