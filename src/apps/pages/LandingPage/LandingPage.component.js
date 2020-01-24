@@ -12,6 +12,8 @@ import {
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { fetchProperties } from '../../redux/actions/FetchProperties';
+// to do
+// import { scrollingBackground } from '../../utils/SlidingUtility';
 
 import Slider from '../../components/LandingComponents/Slider.component';
 import PropertyScrollerView from '../../components/LandingComponents/PropertyScrollerView.component';
@@ -41,11 +43,11 @@ class LandingPage extends Component {
 
     componentDidMount() {
         if (this.props.fetchProperties()) {
-            this.scrollingBackground();
+            this.scrollBackground();
         }
     }
 
-    scrollingBackground() {
+    scrollBackground() {
         const numOfBackground = 5;
         let scrollValue = 0, scrolled = 0;
         setInterval(function () {

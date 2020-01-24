@@ -60,7 +60,7 @@ export default class SelectedPropertyDisplay extends Component {
                 scrollerView.scrollTo({ x: scrollValue, animated: false });
             }
 
-        }, 4000);
+        }, 3000);
         if (scrollerViewApp) {
             scrollerViewApp.scrollTo({ animated: false });
         }
@@ -94,6 +94,8 @@ export default class SelectedPropertyDisplay extends Component {
                         {images.map((image, i) => {
                             return (
                                 <ImageBackground source={image} {...this.props} style={GlobalStyles.image} />
+
+
                             )
                         })
                         }
