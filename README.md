@@ -80,6 +80,7 @@ Below are the points which are refactored:
 ### ToDo
 - Similar above points will be perform for SelectedPropertyDisplay
 - `SlidingUtility` is created in `utils` for more abstraction from Landing and SelectedPropertyDisplay to reuse from utility itself for both component.
+- adding `index.js` for every folders to `export * modules` and importing in one line
 - Setup `jest` in `reactnativeapp\jest` for unit testing.
 - Adding `LandingPage.component.test.js` and similar for other to do unit testing.
 - From paper layout to UML Layout Ecommerce Architecture diagram draw and add for this app.
